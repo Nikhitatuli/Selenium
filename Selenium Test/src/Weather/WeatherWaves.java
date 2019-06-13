@@ -13,6 +13,7 @@ public class WeatherWaves {
 		WebDriver driver= new ChromeDriver();
 		InputStreamReader ir = new InputStreamReader(System.in);
 		BufferedReader br= new BufferedReader(ir);
+		System.out.println("Enter url");
 		String url=br.readLine();
 		driver.get("url");
 		driver.manage().window().maximize();
