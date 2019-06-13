@@ -1,16 +1,22 @@
 package Weather;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class WeatherWaves {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikhita.t\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		driver.get("https://weatherwaves.co/");
+		InputStreamReader ir = new InputStreamReader(System.in);
+		BufferedReader br= new BufferedReader(ir);
+		String url=br.readLine();
+		driver.get("url");
 		driver.manage().window().maximize();
-		//driver.findElement(By.id("identifierId")).sendKeys("niks9025@gmail.com");
-		//driver.findElement(By.id("identifierNext")).click();
+		
 		String at=driver.getTitle();
 		String et= "weather waves search";
 		driver.close();
