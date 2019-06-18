@@ -7,16 +7,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class WeatherWaves {
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+	static
+	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikhita.t\\Desktop\\Selenium\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+	}
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		
+		
 		InputStreamReader ir = new InputStreamReader(System.in);
 		BufferedReader br= new BufferedReader(ir);
 		System.out.println("Enter url");
 		String url=br.readLine();
-		driver.get("url");
-		driver.manage().window().maximize();
+		
+		Thread.sleep(3000);
+		WebDriver driver= new ChromeDriver();
+		//driver.switchTo().frame(url);
+		driver.get(url);
+		
+		
 		
 		String at=driver.getTitle();
 		String et= "weather waves search";

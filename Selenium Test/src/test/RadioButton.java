@@ -16,9 +16,10 @@ public class RadioButton {
 		driver.navigate().to("https://www.toolsqa.com/automation-practice-form/");
 		WebElement radio1= driver.findElement(By.id("sex-1"));
 		radio1.click();
-		List <WebElement> radio2 = driver.findElements(By.className("control-label"));
-		for(WebElement ele :radio2) 
-		System.out.println(((WebElement) radio2).getText());
+		List <WebElement> radio2 = driver.findElements(By.name("exp"));
+		//for(WebElement ele:radio2) 
+		//System.out.println(radio2.get(0).getText());
+		radio2.get(2).click();
 		driver.close();
 	}
 
