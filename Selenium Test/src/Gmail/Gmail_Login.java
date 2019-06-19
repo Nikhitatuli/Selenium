@@ -13,17 +13,18 @@ public class Gmail_Login {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikhita.t\\Desktop\\Selenium\\chromedriver.exe");
+
 WebDriver driver= new ChromeDriver();
 driver.get("https://accounts.google.com/");
-driver.findElement(By.id("identifierId")).sendKeys("niks9025@gmail.com");
+driver.findElement(By.id("identifierId")).sendKeys("nikhita.t@media.net");
 Thread.sleep(2000);
 driver.findElement(By.id("identifierNext")).click();
 Thread.sleep(2000);
- driver.findElement(By.name("password")).sendKeys("password");
+ driver.findElement(By.name("password")).sendKeys("Nikhita@2590");
  Thread.sleep(2000);
 
 driver.findElement(By.id("passwordNext")).click();
+Thread.sleep(2000);
 driver.close();
 
 
