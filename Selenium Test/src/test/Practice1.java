@@ -27,6 +27,7 @@ public class Practice1 {
 		System.out.println("url");
 		driver.navigate().forward();
 		driver.navigate().refresh();
+		driver.get("gmail.com");
 		driver.quit();
 		
 		
