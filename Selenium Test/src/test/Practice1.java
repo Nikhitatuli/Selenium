@@ -21,7 +21,8 @@ public class Practice1 {
 		}
 		else
 			System.out.println("fail");
-		driver.get("www.google.com");
+		
+		driver.navigate().to("www.google.com");
 		String url = driver.getCurrentUrl();
 		System.out.println("url");
 		driver.navigate().forward();
@@ -29,7 +30,7 @@ public class Practice1 {
 		driver.quit();
 		
 		
-		driver.quit();
+		
 	}
 	
 }
