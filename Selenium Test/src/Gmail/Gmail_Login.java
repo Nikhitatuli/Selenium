@@ -25,6 +25,9 @@ Thread.sleep(2000);
 
 driver.findElement(By.id("passwordNext")).click();
 Thread.sleep(2000);
+
+driver.findElement(By.id("idvPin")).sendKeys("nikhita.t@media.net");
+
 driver.close();
 
 
