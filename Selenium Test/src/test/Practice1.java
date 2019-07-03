@@ -1,3 +1,4 @@
+//navigation and compare titles
 package test;
 
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,6 @@ public class Practice1 {
 		{
 			System.out.println("pass");
 		}
-		else
 			System.out.println("fail");
 		Thread.sleep(2000);
 		driver.navigate().to("https://www.google.com");
