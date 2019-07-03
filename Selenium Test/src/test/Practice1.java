@@ -9,7 +9,7 @@ public class Practice1 {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikhita.t\\Desktop\\Selenium\\chromedriver.exe");
 	}
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		WebDriver driver= new ChromeDriver();
 		driver.get("http://gmail.com");
@@ -21,13 +21,16 @@ public class Practice1 {
 		}
 		else
 			System.out.println("fail");
-		
-		driver.navigate().to("www.google.com");
+		Thread.sleep(2000);
+		driver.navigate().to("https://www.google.com");
 		String url = driver.getCurrentUrl();
 		System.out.println("url");
-		driver.navigate().forward();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
 		driver.navigate().refresh();
-		driver.get("gmail.com");
+	
+		Thread.sleep(2000);
 		driver.quit();
 		
 		
