@@ -21,8 +21,11 @@ public class WeatherWaves {
 		String url=br.readLine();
 		
 		Thread.sleep(3000);
+		
 		WebDriver driver= new ChromeDriver();
+		
 		//driver.switchTo().frame(url);
+		
 		driver.get(url);
 		
 		

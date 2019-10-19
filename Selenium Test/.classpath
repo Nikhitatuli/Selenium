@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.9.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/nikhita.t/Desktop/Selenium/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
